@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="qikan:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="qikan-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="qikan:war exploded" />
+    </root>
+  </artifact>
+</component>
