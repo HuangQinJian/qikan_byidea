@@ -3,10 +3,9 @@
  */
 package com.hqj.test;
 
-import org.junit.Test;
-
 import com.hqj.model.Editor;
 import com.hqj.serviceimpl.EditorServiceImpl;
+import org.junit.Test;
 
 public class testEditor {
     EditorServiceImpl eImpl = new EditorServiceImpl().getInstance();

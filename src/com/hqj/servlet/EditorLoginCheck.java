@@ -1,14 +1,13 @@
 package com.hqj.servlet;
 
-import java.io.IOException;
+import com.hqj.model.Editor;
+import com.hqj.serviceimpl.EditorServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.hqj.model.Editor;
-import com.hqj.serviceimpl.EditorServiceImpl;
+import java.io.IOException;
 
 /**
  * Servlet implementation class EditorLoginCheck

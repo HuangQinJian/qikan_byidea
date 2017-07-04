@@ -1,15 +1,14 @@
 package com.hqj.servlet;
 
-import java.io.IOException;
+import com.alibaba.fastjson.JSON;
+import com.hqj.model.Article;
+import com.hqj.serviceimpl.ArticleServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.alibaba.fastjson.JSON;
-import com.hqj.model.Article;
-import com.hqj.serviceimpl.ArticleServiceImpl;
+import java.io.IOException;
 
 /**
  * Servlet implementation class SearchArticleById

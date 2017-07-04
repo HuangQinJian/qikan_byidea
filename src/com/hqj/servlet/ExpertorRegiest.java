@@ -25,7 +25,7 @@ public class ExpertorRegiest extends HttpServlet {
             if (new ExpertServiceImpl().getInstance().add(expert)) {
                 response.sendRedirect("ExpertorLogin.jsp");
             } else
-                System.out.println("no");
+               response.sendRedirect("/errorpage/ExpertorRegiestErr.jsp");
         }
     }
 

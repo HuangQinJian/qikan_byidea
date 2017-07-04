@@ -3,9 +3,9 @@
  */
 package com.hqj.model;
 
-import java.util.Date;
-
 import com.alibaba.fastjson.annotation.JSONField;
+
+import java.util.Date;
 
 public class Article {
     public int id;

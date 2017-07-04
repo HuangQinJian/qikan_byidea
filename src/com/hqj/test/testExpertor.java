@@ -2,7 +2,6 @@ package com.hqj.test;
 
 import com.hqj.model.Expert;
 import com.hqj.serviceimpl.ExpertServiceImpl;
-import com.hqj.servlet.ExpertLoginCheck;
 import org.junit.Test;
 
 /**

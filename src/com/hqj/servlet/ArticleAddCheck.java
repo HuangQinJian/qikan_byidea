@@ -17,61 +17,55 @@ import com.hqj.serviceimpl.AuthorServiceImpl;
  * Servlet implementation class ArticleAddCheck
  */
 public class ArticleAddCheck extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public ArticleAddCheck() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ArticleAddCheck() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-	}
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     * response)
+     */
+    protected void doGet(HttpServletRequest request,
+                         HttpServletResponse response) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+    }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		request.setCharacterEncoding("utf-8");
-		String title = request.getParameter("title");
-		String publish_time = request.getParameter("publish_time");
-		String author = request.getParameter("author");
-		String content = request.getParameter("article_content");
-		// System.out.println(title);
-		// System.out.println(author);
-		// System.out.println(publish_time);
-		// System.out.println(content);
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		Article article = new Article();
-		Author authors = new Author();
-		authors.setAutoname(author);
-		article.setTitle(title);
-		try {
-			article.setPublishdate(sdf.parse(publish_time));
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		article.setAutor(authors);
-		article.setContent(content);
-		if (new AuthorServiceImpl().getInstance().addArticle(article)) {
-			// System.out.println("wwwwww");
-			response.sendRedirect("/qikan/ueditor/authorjsp/AuthorHome.jsp");
-		} else {
-			// System.out.println("oooooo");
-			response.sendRedirect("/qikan/errorpage/ArticleAddError.jsp");
-		}
-	}
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     * response)
+     */
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+        request.setCharacterEncoding("utf-8");
+        String title = request.getParameter("title");
+        String publish_time = request.getParameter("publish_time");
+        String author = request.getParameter("author");
+        String content = request.getParameter("article_content");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Article article = new Article();
+        Author authors = new Author();
+        authors.setAutoname(author);
+        article.setTitle(title);
+        try {
+            article.setPublishdate(sdf.parse(publish_time));
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        article.setAutor(authors);
+        article.setContent(content);
+        if (new AuthorServiceImpl().getInstance().addArticle(article)) {
+            response.sendRedirect("/qikan/ueditor/authorjsp/AuthorHome.jsp");
+        } else {
+            response.sendRedirect("/qikan/errorpage/ArticleAddError.jsp");
+        }
+    }
 
 }
