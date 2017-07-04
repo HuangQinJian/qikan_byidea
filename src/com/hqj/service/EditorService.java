@@ -14,7 +14,7 @@ public interface EditorService {
 
     public boolean addarticle(Article article);
 
-    public boolean updatearticle(Article article);
+    public boolean updatearticle(int id, String editorname, String editordetail, java.util.Date editortime);
 
     public boolean delarticle(Article article);
 }

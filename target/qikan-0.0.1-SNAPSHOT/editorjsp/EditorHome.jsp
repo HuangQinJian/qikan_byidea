@@ -22,7 +22,8 @@
     <h1>{{tit}}</h1>
     <ul>
         {{each list as value i}}
-        <li><a href="ShowEveryArticle.jsp?id={{value.id}}"> {{i + 1}} ：{{value.title}}</a></li>
+        <li><a href="ShowEveryArticle.jsp?id={{value.id}}"> {{i + 1}} ：{{value.title}} 作者：
+            {{value.autor.autoname}}</a></li>
         {{/each}}
     </ul>
 </script>
@@ -35,7 +36,7 @@
             dataType: "json",
             data: {},
             success: function (data) {
-                //console.log(data);
+                console.log(data);
                 var result = {
                     tit: '文章列表',
                     list: data

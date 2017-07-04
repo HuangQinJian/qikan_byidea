@@ -29,21 +29,27 @@
         <div id="detail">
             <div id="author">
                 文章作者:
-                <p>zhanwu</p>
+                <input type="text" value={{list.autor.autoname}} name="author">
             </div>
             <div id="publish_time">
-                <p>{{list.publishdate}}</p>
+                发布时间：
+                <input type="text" value={{list.publishdate}} name="publishdate">
             </div>
-            <div id="content">
-                <p>{{list.content}}</p>
-            </div>
-        </div>
-        <div id="submit">
-            <input type="button" id="btn" value="提交"/>
+            <%--<div id="content">--%>
+            <%--<p>{{list.content}}</p>--%>
+            <%--</div>--%>
+            <textarea rows="14" cols="27" name="content">
+                {{list.content}}
+            </textarea>
         </div>
         <input type="hidden"
-               value={{name}} name="editor">
-        <input type="hidden" value={{time}} name="editor_time">
+               value=<%=id%> name="articleid">
+        <input type="hidden"
+               value=<%=name%> name="editor">
+        <input type="hidden" value=<%=time%> name="editor_time">
+        <div id="submit">
+            <input type="submit" name="submit" value="提交修改">
+        </div>
     </form>
     <%--<h1>{{list.title}}</h1>
     <p>{{list.publishdate}}</p>

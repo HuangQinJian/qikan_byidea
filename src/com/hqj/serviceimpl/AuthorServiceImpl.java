@@ -3,16 +3,16 @@
  */
 package com.hqj.serviceimpl;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 import com.hqj.model.Article;
 import com.hqj.model.Author;
 import com.hqj.model.DB;
 import com.hqj.service.AuthorService;
 import com.mysql.jdbc.Connection;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 
 public class AuthorServiceImpl implements AuthorService {
