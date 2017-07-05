@@ -56,4 +56,13 @@ public class testArticle {
         else
             System.out.println("no");
     }
+
+    @Test
+    public void expertarticle() {
+        Date d = new Date();
+        if (new ArticleServiceImpl().expertarticle(212, "wqw", "wqw", d))
+            System.out.println("yes");
+        else
+            System.out.println("no");
+    }
 }

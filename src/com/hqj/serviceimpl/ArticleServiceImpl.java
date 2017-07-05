@@ -3,18 +3,17 @@
  */
 package com.hqj.serviceimpl;
 
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-
 import com.hqj.model.Article;
 import com.hqj.model.Author;
 import com.hqj.model.DB;
 import com.hqj.service.ArticleService;
 import com.mysql.jdbc.Connection;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 public class ArticleServiceImpl implements ArticleService {
     private ArticleServiceImpl aImpl = null;
@@ -112,6 +111,29 @@ public class ArticleServiceImpl implements ArticleService {
         return false;
     }
 
+    @Override
+    public boolean expertarticle(int id, String expertname, String expertidea, java.util.Date experttime) {
+        String sql = "update article_idea set expertname=?,expertidea=?,experttime=?  where articleid=?";
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, expertname);
+            pstmt.setString(2, expertidea);
+            pstmt.setDate(3, new java.sql.Date(experttime.getTime()));
+            pstmt.setInt(4, id);
+            if (pstmt.executeUpdate() == 1) {
+                System.out.println("更新时的sql语句是" + sql);
+                System.out.println("yes");
+                return true;
+            } else {
+                System.out.println("no");
+                // return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     /*
      * (non-Javadoc)
      *
@@ -151,6 +173,11 @@ public class ArticleServiceImpl implements ArticleService {
             e.printStackTrace();
         }
         return arrayList;
+    }
+
+    @Override
+    public ArrayList<Article> displaydetail() {
+        return null;
     }
 
     /*

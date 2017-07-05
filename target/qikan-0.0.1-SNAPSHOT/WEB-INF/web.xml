@@ -16,12 +16,6 @@
         <servlet-class>com.hqj.servlet.EditorLoginCheck</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ExpertLoginCheck</servlet-name>
-        <display-name>ExpertLoginCheck</display-name>
-        <description></description>
-        <servlet-class>com.hqj.servlet.ExpertLoginCheck</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>AuthorRegiest</servlet-name>
         <display-name>AuthorRegiest</display-name>
         <description></description>
@@ -63,6 +57,10 @@
         <servlet-name>ExpertorRegiest</servlet-name>
         <servlet-class>com.hqj.servlet.ExpertorRegiest</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ArticleExpertCheck</servlet-name>
+        <servlet-class>com.hqj.servlet.ArticleExpertCheck</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthorLoginCheck</servlet-name>
         <url-pattern>/ueditor/authorjsp/AuthorLoginCheck</url-pattern>
@@ -70,10 +68,6 @@
     <servlet-mapping>
         <servlet-name>EditorLoginCheck</servlet-name>
         <url-pattern>/editorjsp/EditorLoginCheck</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ExpertLoginCheck</servlet-name>
-        <url-pattern>/ExpertLoginCheck</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AuthorRegiest</servlet-name>
@@ -89,15 +83,35 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ShowAllArticle</servlet-name>
+        <url-pattern>/ShowAllArticle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowAllArticle</servlet-name>
         <url-pattern>/editorjsp/ShowAllArticle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowAllArticle</servlet-name>
+        <url-pattern>/expertorjsp/ShowAllArticle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchArticleById</servlet-name>
+        <url-pattern>/SearchArticleById</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SearchArticleById</servlet-name>
         <url-pattern>/editorjsp/SearchArticleById</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>SearchArticleById</servlet-name>
+        <url-pattern>/expertorjsp/SearchArticleById</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>ArticleEditCheck</servlet-name>
         <url-pattern>/editorjsp/ArticleEditCheck</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArticleEditCheck</servlet-name>
+        <url-pattern>/expertorjsp/ArticleEditCheck</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ExpertorLoginCheck</servlet-name>
@@ -106,6 +120,10 @@
     <servlet-mapping>
         <servlet-name>ExpertorRegiest</servlet-name>
         <url-pattern>/expertorjsp/ExpertorRegiest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArticleExpertCheck</servlet-name>
+        <url-pattern>/expertorjsp/ArticleExpertCheck</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

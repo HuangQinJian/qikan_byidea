@@ -14,6 +14,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 
 public class ExpertServiceImpl implements ExpertService {
     private ExpertServiceImpl expertService = null;
@@ -91,8 +92,11 @@ public class ExpertServiceImpl implements ExpertService {
     }
 
     @Override
-    public boolean updatearticle(Article article) {
-        return false;
+    public boolean updatearticle(int id, String expertname, String expertidea, java.util.Date experttime) {
+        ArticleServiceImpl articleService = new ArticleServiceImpl();
+        if (articleService.expertarticle(id, expertname, expertidea, experttime))
+            return true;
+        else return false;
     }
 
     @Override
