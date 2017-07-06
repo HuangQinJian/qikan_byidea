@@ -35,9 +35,6 @@
                 发布时间：
                 <input type="text" value={{list.publishdate}} name="publishdate">
             </div>
-            <%--<div id="content">--%>
-            <%--<p>{{list.content}}</p>--%>
-            <%--</div>--%>
             <textarea rows="14" cols="27" name="content">
                 {{list.content}}
             </textarea>
@@ -51,9 +48,6 @@
             <input type="submit" name="submit" value="提交修改">
         </div>
     </form>
-    <%--<h1>{{list.title}}</h1>
-    <p>{{list.publishdate}}</p>
-    <p>{{list.content}}</p>--%>
 </script>
 <script type="text/javascript">
     $.ajax({
