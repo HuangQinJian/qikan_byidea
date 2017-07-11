@@ -24,3 +24,14 @@
 
 其他的就不要配置了。log4j会自动读取对应的配置！
 
+## 注意事项
+
+#### 1、因为本项目中涉及到中文，所以必须注意在servlet中设置相应的编码格式，否则就会出现中文乱码：
+
+```java
+response.setCharacterEncoding("utf-8");
+request.setCharacterEncoding("utf-8");
+```
+
+#### 具体可参考：[response和request的setCharacterEncoding区别](http://www.cnblogs.com/fan-xiaofan/p/6028233.html)
+
