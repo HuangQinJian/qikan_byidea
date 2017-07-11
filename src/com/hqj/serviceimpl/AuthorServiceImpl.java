@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.hqj.serviceimpl;
 
 import com.hqj.model.Article;
@@ -8,6 +5,7 @@ import com.hqj.model.Author;
 import com.hqj.model.DB;
 import com.hqj.service.AuthorService;
 import com.mysql.jdbc.Connection;
+import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,10 +15,12 @@ import java.sql.Statement;
 
 public class AuthorServiceImpl implements AuthorService {
     private AuthorServiceImpl aImpl = null;
+    Logger logger = Logger.getLogger(this.getClass().getName());
 
     public AuthorServiceImpl getInstance() {
         if (aImpl == null) {
-            System.out.println("第一次初始化AuthorServiceImpl");
+            logger.info("第一次初始化AuthorServiceImpl");
+            // System.out.println("第一次初始化AuthorServiceImpl");
             aImpl = new AuthorServiceImpl();
         }
         return aImpl;
@@ -32,7 +32,7 @@ public class AuthorServiceImpl implements AuthorService {
 
     /*
      * (non-Javadoc)
-     *
+     *  往数据库添加注册的作者信息
      * @see com.hqj.service.AuthorService#add(com.hqj.model.Author)
      */
     @Override
@@ -43,11 +43,13 @@ public class AuthorServiceImpl implements AuthorService {
             pstmt.setString(1, author.getAutoname());
             pstmt.setString(2, author.getAutopass());
             if (pstmt.executeUpdate() == 1) {
-                System.out.println("查询时的sql语句是" + sql);
-                System.out.println("yes");
+                logger.info("添加时的sql语句是" + sql);
+                // System.out.println("查询时的sql语句是" + sql);
+                //System.out.println("yes");
                 return true;
             } else {
-                System.out.println("no");
+                logger.info("添加作者失败");
+                // System.out.println("no");
                 // return false;
             }
         } catch (SQLException e) {
@@ -59,7 +61,7 @@ public class AuthorServiceImpl implements AuthorService {
 
     /*
      * (non-Javadoc)
-     *
+     * 删除作者信息
      * @see com.hqj.service.AuthorService#delete(com.hqj.model.Author)
      */
     @Override
@@ -69,11 +71,13 @@ public class AuthorServiceImpl implements AuthorService {
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, author.getAutoname());
             if (pstmt.executeUpdate() == 1) {
-                System.out.println("删除时的sql语句是" + sql);
-                System.out.println("yes");
+                logger.info("删除作者时的sql语句是" + sql);
+                //System.out.println("删除时的sql语句是" + sql);
+                // System.out.println("yes");
                 return true;
             } else {
-                System.out.println("no");
+                logger.info("删除作者失败");
+                // System.out.println("no");
                 // return false;
             }
         } catch (SQLException e) {
@@ -103,18 +107,21 @@ public class AuthorServiceImpl implements AuthorService {
     public boolean search(String name, String password) {
         // TODO Auto-generated method stub
         String sql = "select * from author";
-        System.out.println("查询时的sql语句是" + sql);
+        logger.info("查询作者时的sql语句是" + sql);
+        // System.out.println("查询时的sql语句是" + sql);
         ResultSet rSet = DB.getResultSet(st, sql);
         int index = 0;
         try {
             while (rSet.next()) {
                 if (rSet.getString(2).equals(name)
                         && rSet.getString(3).equals(password)) {
-                    System.out.println("登录成功");
+                    // System.out.println("登录成功");
+                    logger.info("登录成功");
                     index = 1;
                     break;
                 } else {
-                    System.out.println("您输入的用户名或者密码不正确，请重新输入!");
+                    logger.info("您输入的用户名或者密码不正确，请重新输入!");
+                    // System.out.println("您输入的用户名或者密码不正确，请重新输入!");
                     index = 0;
                 }
             }
@@ -143,7 +150,8 @@ public class AuthorServiceImpl implements AuthorService {
         // TODO Auto-generated method stub
         ArticleServiceImpl aImpl = new ArticleServiceImpl();
         if (aImpl.addarticle(article)) {
-            System.out.println("yes");
+            logger.info("作者添加文章成功!");
+            // System.out.println("yes");
             return true;
         }
         return false;

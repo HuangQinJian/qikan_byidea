@@ -9,6 +9,10 @@
 <html>
 <head>
     <title>用户登录错误界面</title>
+    <h3>文章作者者登录错误，网页将于3秒后重新跳转到登录页面</h3>
+    <%
+        response.setHeader("Refresh", "3;URL=../ueditor/authorjsp/AuthorLogin.jsp");
+    %>
 </head>
 <body>
 <p>用户登录错误界面</p>

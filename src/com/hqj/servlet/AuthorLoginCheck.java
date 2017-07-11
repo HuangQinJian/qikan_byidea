@@ -42,7 +42,7 @@ public class AuthorLoginCheck extends HttpServlet {
                 request.getSession().setAttribute("name", name);
                 response.sendRedirect("AuthorHome.jsp");
             } else
-                response.sendRedirect("/errorpage/AuthorLoginErr.jsp");
+                response.sendRedirect("/qikan/errorpage/AuthorLoginErr.jsp");
         }
     }
 }

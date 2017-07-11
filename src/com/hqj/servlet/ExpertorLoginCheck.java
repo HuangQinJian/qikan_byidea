@@ -21,7 +21,7 @@ public class ExpertorLoginCheck extends HttpServlet {
                 request.getSession().setAttribute("name", name);
                 response.sendRedirect("ExpertorHome.jsp");
             } else
-                response.sendRedirect("/errorpage/ExpertorLoginErr.jsp");
+                response.sendRedirect("/qikan/errorpage/ExpertorLoginErr.jsp");
         }
     }
 

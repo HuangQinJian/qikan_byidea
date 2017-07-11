@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.hqj.serviceimpl;
 
 import com.hqj.model.Article;
@@ -8,6 +5,7 @@ import com.hqj.model.Author;
 import com.hqj.model.DB;
 import com.hqj.service.ArticleService;
 import com.mysql.jdbc.Connection;
+import org.apache.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,10 +15,12 @@ import java.util.ArrayList;
 
 public class ArticleServiceImpl implements ArticleService {
     private ArticleServiceImpl aImpl = null;
+    private Logger logger = Logger.getLogger(this.getClass().getName());
 
     public ArticleServiceImpl getInstance() {
         if (aImpl == null) {
-            System.out.println("第一次初始化ArticleServiceImpl");
+            logger.info("第一次初始化ArticleServiceImpl");
+            //System.out.println("第一次初始化ArticleServiceImpl");
             aImpl = new ArticleServiceImpl();
         }
         return aImpl;
@@ -34,6 +34,7 @@ public class ArticleServiceImpl implements ArticleService {
      * (non-Javadoc)
      *
      * @see com.hqj.service.ArticleService#addarticle(com.hqj.model.Article)
+     * 实现添加作者新增文章功能
      */
     @Override
     public boolean addarticle(Article article) {
@@ -47,11 +48,13 @@ public class ArticleServiceImpl implements ArticleService {
                     .getTime()));
             pstmt.setString(4, article.getContent());
             if (pstmt.executeUpdate() == 1) {
-                System.out.println("查询时的sql语句是" + sql);
-                System.out.println("yes");
+                logger.info("添加时的sql语句是" + sql);
+                //System.out.println("查询时的sql语句是" + sql);
+                // System.out.println("yes");
                 return true;
             } else {
-                System.out.println("no");
+                logger.info("添加文章失败！");
+                //System.out.println("no");
                 // return false;
             }
         } catch (SQLException e) {
@@ -61,6 +64,9 @@ public class ArticleServiceImpl implements ArticleService {
         return false;
     }
 
+    /*
+    实现文章内容更新的功能
+     */
     @Override
     public boolean updatearticle(int id, String editordetail) {
         String sql = "update article set content=?  where id=?";
@@ -69,11 +75,13 @@ public class ArticleServiceImpl implements ArticleService {
             pstmt.setString(1, editordetail);
             pstmt.setInt(2, id);
             if (pstmt.executeUpdate() == 1) {
-                System.out.println("更新时的sql语句是" + sql);
-                System.out.println("yes");
+                logger.info("更新时的sql语句是" + sql);
+                // System.out.println("更新时的sql语句是" + sql);
+                //  System.out.println("yes");
                 return true;
             } else {
-                System.out.println("no");
+                logger.info("更新文章失败！");
+                // System.out.println("no");
                 // return false;
             }
         } catch (SQLException e) {
@@ -84,7 +92,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     /*
      * (non-Javadoc)
-     *
+     * 编辑者对于文章修改
      * @see com.hqj.service.ArticleService#updatearticle(com.hqj.model.Article)
      */
     @Override
@@ -98,11 +106,13 @@ public class ArticleServiceImpl implements ArticleService {
             pstmt.setDate(3, new java.sql.Date(editortime.getTime()));
             pstmt.setInt(4, id);
             if (pstmt.executeUpdate() == 1) {
-                System.out.println("更新时的sql语句是" + sql);
-                System.out.println("yes");
+                logger.info("编辑者更新时的sql语句是" + sql);
+                // System.out.println("更新时的sql语句是" + sql);
+                //System.out.println("yes");
                 return true;
             } else {
-                System.out.println("no");
+                logger.info("编辑者更新文章失败！");
+                //System.out.println("no");
                 // return false;
             }
         } catch (SQLException e) {
@@ -111,6 +121,9 @@ public class ArticleServiceImpl implements ArticleService {
         return false;
     }
 
+    /*
+    专家对于文章的修改意见
+     */
     @Override
     public boolean expertarticle(int id, String expertname, String expertidea, java.util.Date experttime) {
         String sql = "update article_idea set expertname=?,expertidea=?,experttime=?  where articleid=?";
@@ -121,11 +134,13 @@ public class ArticleServiceImpl implements ArticleService {
             pstmt.setDate(3, new java.sql.Date(experttime.getTime()));
             pstmt.setInt(4, id);
             if (pstmt.executeUpdate() == 1) {
-                System.out.println("更新时的sql语句是" + sql);
-                System.out.println("yes");
+                logger.info("专家更新时的sql语句是" + sql);
+                // System.out.println("更新时的sql语句是" + sql);
+                // System.out.println("yes");
                 return true;
             } else {
-                System.out.println("no");
+                logger.info("专家更新文章失败！");
+                // System.out.println("no");
                 // return false;
             }
         } catch (SQLException e) {
@@ -136,7 +151,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     /*
      * (non-Javadoc)
-     *
+     *  删除文章
      * @see com.hqj.service.ArticleService#delarticle(com.hqj.model.Article)
      */
     @Override
@@ -147,7 +162,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     /*
      * (non-Javadoc)
-     *
+     *  显示所有文章
      * @see com.hqj.service.ArticleService#display()
      */
     @Override
@@ -182,7 +197,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     /*
      * (non-Javadoc)
-     *
+     *  通过作者名字对文章进行搜索
      * @see com.hqj.service.ArticleService#searchByAuthorId(int)
      */
     @Override
@@ -212,7 +227,7 @@ public class ArticleServiceImpl implements ArticleService {
 
     /*
      * (non-Javadoc)
-     *
+     * 通过文章ID对文章进行搜索
      * @see com.hqj.service.ArticleService#SearchArticleById(int)
      */
     @Override

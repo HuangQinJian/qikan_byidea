@@ -1,26 +1,26 @@
-/**
- *
- */
 package com.hqj.serviceimpl;
-
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 
 import com.hqj.model.Article;
 import com.hqj.model.DB;
 import com.hqj.model.Editor;
 import com.hqj.service.EditorService;
 import com.mysql.jdbc.Connection;
+import org.apache.log4j.Logger;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 
 public class EditorServiceImpl implements EditorService {
     private EditorServiceImpl eImpl = null;
+    private Logger logger = Logger.getLogger(this.getClass().getName());
 
     public EditorServiceImpl getInstance() {
         if (eImpl == null) {
-            System.out.println("第一次初始化EditorServiceImpl");
+            logger.info("第一次初始化EditorServiceImpl");
+            // System.out.println("第一次初始化EditorServiceImpl");
             eImpl = new EditorServiceImpl();
         }
         return eImpl;
@@ -32,7 +32,7 @@ public class EditorServiceImpl implements EditorService {
 
     /*
      * (non-Javadoc)
-     *
+     * 编辑者添加文章
      * @see com.hqj.service.EditorService#addarticle(com.hqj.model.Article)
      */
     @Override
@@ -43,7 +43,7 @@ public class EditorServiceImpl implements EditorService {
 
     /*
      * (non-Javadoc)
-     *
+     *  更新文章
      * @see com.hqj.service.EditorService#updatearticle(com.hqj.model.Article)
      */
     @Override
@@ -57,7 +57,7 @@ public class EditorServiceImpl implements EditorService {
 
     /*
      * (non-Javadoc)
-     *
+     * 删除文章
      * @see com.hqj.service.EditorService#delarticle(com.hqj.model.Article)
      */
     @Override
@@ -68,7 +68,7 @@ public class EditorServiceImpl implements EditorService {
 
     /*
      * (non-Javadoc)
-     *
+     *  添加编辑者用户信息
      * @see com.hqj.service.EditorService#add(com.hqj.model.Editor)
      */
     @Override
@@ -80,11 +80,13 @@ public class EditorServiceImpl implements EditorService {
             pstmt.setString(1, editor.getEditname());
             pstmt.setString(2, editor.getEditpass());
             if (pstmt.executeUpdate() == 1) {
-                System.out.println("查询时的sql语句是" + sql);
-                System.out.println("yes");
+                logger.info("查询时的sql语句是" + sql);
+                //System.out.println("查询时的sql语句是" + sql);
+                // System.out.println("yes");
                 return true;
             } else {
-                System.out.println("no");
+                logger.error("编辑者信息添加失败!");
+                // System.out.println("no");
                 // return false;
             }
         } catch (SQLException e) {
@@ -96,7 +98,7 @@ public class EditorServiceImpl implements EditorService {
 
     /*
      * (non-Javadoc)
-     *
+     * 编辑者登录
      * @see com.hqj.service.EditorService#search(java.lang.String,
      * java.lang.String)
      */
@@ -104,18 +106,22 @@ public class EditorServiceImpl implements EditorService {
     public boolean search(String name, String password) {
         // TODO Auto-generated method stub
         String sql = "select * from editor";
-        System.out.println("查询时的sql语句是" + sql);
+        logger.info("编辑者查询时的sql语句是" + sql);
+        //System.out.println("查询时的sql语句是" + sql);
         ResultSet rSet = DB.getResultSet(st, sql);
         int index = 0;
         try {
             while (rSet.next()) {
                 if (rSet.getString(2).equals(name)
                         && rSet.getString(3).equals(password)) {
-                    System.out.println("登录成功");
+                    logger.info("编辑者登录成功！");
+                    //System.out.println("登录成功");
                     index = 1;
                     break;
                 } else {
-                    System.out.println("您输入的用户名或者密码不正确，请重新输入!");
+                    logger.info("编辑者登录失败！");
+                    logger.error("您输入的用户名或者密码不正确，请重新输入!");
+                    //System.out.println("您输入的用户名或者密码不正确，请重新输入!");
                     index = 0;
                 }
             }
