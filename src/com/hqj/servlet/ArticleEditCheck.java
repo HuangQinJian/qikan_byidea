@@ -20,7 +20,7 @@ public class ArticleEditCheck extends HttpServlet {
         response.setCharacterEncoding("utf-8");
         request.setCharacterEncoding("utf-8");
         int articleid = Integer.parseInt(request.getParameter("articleid"));
-        String content = request.getParameter("content");
+        String content = request.getParameter("content").trim();
         String editor = request.getParameter("editor");
         String edittime = request.getParameter("editor_time");
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

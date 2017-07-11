@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9890b4be-064a-4f9a-ac78-e55448fb8a90" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/css/index.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ArticleAddCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ArticleAddCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ArticleEditCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ArticleEditCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ArticleExpertCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ArticleExpertCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ArticleAddCheck.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ArticleAddCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ArticleEditCheck.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ArticleEditCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ArticleExpertCheck.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ArticleExpertCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/assets/css/main.css" afterPath="$PROJECT_DIR$/WebRoot/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/editorjsp/EditorHome.jsp" afterPath="$PROJECT_DIR$/WebRoot/editorjsp/EditorHome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/editorjsp/ShowEveryArticle.jsp" afterPath="$PROJECT_DIR$/WebRoot/editorjsp/ShowEveryArticle.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/expertorjsp/ExpertorHome.jsp" afterPath="$PROJECT_DIR$/WebRoot/expertorjsp/ExpertorHome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/expertorjsp/ShowEveryArticle.jsp" afterPath="$PROJECT_DIR$/WebRoot/expertorjsp/ShowEveryArticle.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/ueditor/authorjsp/AuthorHome.jsp" afterPath="$PROJECT_DIR$/WebRoot/ueditor/authorjsp/AuthorHome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/servlet/ArticleAddCheck.java" afterPath="$PROJECT_DIR$/src/com/hqj/servlet/ArticleAddCheck.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/servlet/ArticleEditCheck.java" afterPath="$PROJECT_DIR$/src/com/hqj/servlet/ArticleEditCheck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/servlet/ArticleExpertCheck.java" afterPath="$PROJECT_DIR$/src/com/hqj/servlet/ArticleExpertCheck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/assets/css/main.css" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/editorjsp/EditorHome.jsp" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/editorjsp/EditorHome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/editorjsp/ShowEveryArticle.jsp" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/editorjsp/ShowEveryArticle.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/expertorjsp/ExpertorHome.jsp" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/expertorjsp/ExpertorHome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/expertorjsp/ShowEveryArticle.jsp" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/expertorjsp/ShowEveryArticle.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/index.jsp" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/ueditor/authorjsp/AuthorHome.jsp" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/ueditor/authorjsp/AuthorHome.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/index.css" afterPath="$PROJECT_DIR$/WebRoot/css/article_list.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,18 +30,7 @@
     <favorites_list name="qikan" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="return_home.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebRoot/css/return_home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,8 +96,6 @@
         <option value="$PROJECT_DIR$/WebRoot/ueditor/authorjsp/AuthorRegiest.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/expertorjsp/ExpertorRegiest.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/editorjsp/EditorRegiest.jsp" />
-        <option value="$PROJECT_DIR$/src/com/hqj/servlet/ArticleAddCheck.java" />
-        <option value="$PROJECT_DIR$/src/com/hqj/servlet/ArticleEditCheck.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/servlet/ArticleExpertCheck.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/WebRoot/index.jsp" />
@@ -146,6 +106,8 @@
         <option value="$PROJECT_DIR$/WebRoot/expertorjsp/ExpertorHome.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/expertorjsp/ShowEveryArticle.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/css/return_home.css" />
+        <option value="$PROJECT_DIR$/src/com/hqj/servlet/ArticleAddCheck.java" />
+        <option value="$PROJECT_DIR$/src/com/hqj/servlet/ArticleEditCheck.java" />
       </list>
     </option>
   </component>
@@ -944,7 +906,7 @@
       <workItem from="1499729490737" duration="6728000" />
       <workItem from="1499741680078" duration="18102000" />
       <workItem from="1499769343748" duration="10369000" />
-      <workItem from="1499781440403" duration="951000" />
+      <workItem from="1499781440403" duration="1429000" />
     </task>
     <servers />
   </component>
@@ -981,10 +943,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70113000" />
+    <option name="totallyTimeSpent" value="70591000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1007,7 +969,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35081968" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35081968" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1762481" sideWeight="0.4704918" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17170954" sideWeight="0.5295082" order="2" side_tool="true" content_ui="tabs" />
@@ -1273,13 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hqj/servlet/ArticleAddCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="46" column="46" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1301,13 +1256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hqj/servlet/ArticleExpertCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-975">
@@ -1326,13 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1550">
           <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hqj/servlet/ArticleEditCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1395,6 +1336,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/servlet/ArticleAddCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="50" column="71" lean-forward="false" selection-start-line="50" selection-start-column="71" selection-end-line="50" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/servlet/ArticleExpertCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/servlet/ArticleEditCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="22" column="63" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
           <folding />
         </state>
       </provider>

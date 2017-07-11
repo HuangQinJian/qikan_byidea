@@ -48,7 +48,7 @@ public class ArticleAddCheck extends HttpServlet {
         String title = request.getParameter("title");
         String publish_time = request.getParameter("publish_time");
         String author = request.getParameter("author");
-        String content = request.getParameter("article_content");
+        String content = request.getParameter("article_content").trim();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Article article = new Article();
         Author authors = new Author();
