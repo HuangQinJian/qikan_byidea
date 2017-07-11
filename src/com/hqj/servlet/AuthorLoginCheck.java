@@ -34,6 +34,7 @@ public class AuthorLoginCheck extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
+        response.setCharacterEncoding("utf-8");
         String name = request.getParameter("name");
         String password = request.getParameter("password");
         if (name != null && password != null) {

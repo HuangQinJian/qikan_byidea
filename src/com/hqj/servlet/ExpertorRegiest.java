@@ -14,6 +14,7 @@ import java.io.IOException;
  */
 public class ExpertorRegiest extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("utf-8");
         String name = request.getParameter("name");
         String password = request.getParameter("password");
         System.out.println(name);

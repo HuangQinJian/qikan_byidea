@@ -61,6 +61,10 @@
         <servlet-name>ArticleExpertCheck</servlet-name>
         <servlet-class>com.hqj.servlet.ArticleExpertCheck</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetIdByArticleTitle</servlet-name>
+        <servlet-class>com.hqj.servlet.GetIdByArticleTitle</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthorLoginCheck</servlet-name>
         <url-pattern>/ueditor/authorjsp/AuthorLoginCheck</url-pattern>
@@ -124,6 +128,10 @@
     <servlet-mapping>
         <servlet-name>ArticleExpertCheck</servlet-name>
         <url-pattern>/expertorjsp/ArticleExpertCheck</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetIdByArticleTitle</servlet-name>
+        <url-pattern>/GetIdByArticleTitle</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

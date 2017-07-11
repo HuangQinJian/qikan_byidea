@@ -40,6 +40,7 @@ public class SearchArticleById extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.setCharacterEncoding("utf-8");
 		int id = Integer.parseInt(request.getParameter("id"));
 		ArticleServiceImpl aImpl = new ArticleServiceImpl();
 		Article article = aImpl.SearchArticleById(id);

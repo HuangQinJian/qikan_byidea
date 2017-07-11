@@ -65,4 +65,12 @@ public class testArticle {
         else
             System.out.println("no");
     }
+
+    @Test
+    public void getidByArticleTitle() {
+        System.out.print(new ArticleServiceImpl().getidByArticleTitle("wo"));
+        System.out.print(new ArticleServiceImpl().getidByArticleTitle("sasa"));
+        System.out.print(new ArticleServiceImpl().getidByArticleTitle("我爱你"));
+        System.out.print(new ArticleServiceImpl().getidByArticleTitle("我爱她"));
+    }
 }

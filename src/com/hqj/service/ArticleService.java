@@ -23,4 +23,6 @@ public interface ArticleService {
     public ArrayList<Article> searchByAuthorName(String authorName);
 
     public Article SearchArticleById(int id);
+
+    public int getidByArticleTitle(String title);
 }

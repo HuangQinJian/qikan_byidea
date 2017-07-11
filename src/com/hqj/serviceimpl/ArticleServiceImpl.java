@@ -253,4 +253,23 @@ public class ArticleServiceImpl implements ArticleService {
         return article;
     }
 
+    /*
+    根据文章标题得到文章ID
+     */
+
+    @Override
+    public int getidByArticleTitle(String title) {
+        String sql = "select * from article where title=" + "'" + title
+                + "'";
+        ResultSet rSet = DB.getResultSet(st, sql);
+        try {
+            while (rSet.next()) {
+                return rSet.getInt("id");
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return 0;
+    }
 }

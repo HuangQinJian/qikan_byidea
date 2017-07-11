@@ -17,6 +17,7 @@ import java.util.Date;
  */
 public class ArticleEditCheck extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("utf-8");
         int articleid = Integer.parseInt(request.getParameter("articleid"));
         String content = request.getParameter("content");
         String editor = request.getParameter("editor");
