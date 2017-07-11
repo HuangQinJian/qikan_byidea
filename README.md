@@ -35,3 +35,31 @@ request.setCharacterEncoding("utf-8");
 
 #### 具体可参考：[response和request的setCharacterEncoding区别](http://www.cnblogs.com/fan-xiaofan/p/6028233.html)
 
+#### 2、art-template模板引擎的使用方法
+
+（1）引入art-template
+```java
+<script src="../js/template-web.js"></script>
+```
+（2）模板渲染
+```javascript
+<script type="text/html" id="test">
+    <h1>{{tit}}</h1>
+    <ul>
+        {{each list as value i}}
+        <li><a href="ShowEveryArticle.jsp?id={{value.id}}">{{i+1}}:{{value.title}} 作者：{{value.autor.autoname}}</a></li>
+        {{/each}}
+    </ul>
+</script>
+```
+
+```html
+<!-- 显示文章列表 -->
+<div class="panel-body" id="article_list"></div>
+```
+result是后台获取的json数据
+
+```javascript
+ var html = template('test', result);
+ document.getElementById('article_list').innerHTML = html;
+```
