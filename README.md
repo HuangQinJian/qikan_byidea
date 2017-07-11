@@ -18,7 +18,7 @@
 首先在src目录下建立一个resource文件夹，然后添加log4j.properties文件，具体内容可参考代码！
 
 易错点：一定要把resource文件夹标记为资源文件夹，具体步骤如下：
-![](http://op3sagu96.bkt.clouddn.com/456.PNG)
+![](http://op3sagu96.bkt.clouddn.com/456.gif)
 
 如果不做这一步会报错！
 
