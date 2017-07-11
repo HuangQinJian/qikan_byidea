@@ -1,15 +1,8 @@
-/**
- *
- */
 package com.hqj.model;
 
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 import com.mysql.jdbc.Connection;
+
+import java.sql.*;
 
 public class DB {
     public static Connection getConn() {

@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.hqj.model;
 
 public class Author {

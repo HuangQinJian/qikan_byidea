@@ -1,12 +1,9 @@
-/**
- *
- */
 package com.hqj.service;
+
+import com.hqj.model.Article;
 
 import java.util.ArrayList;
 import java.util.Date;
-
-import com.hqj.model.Article;
 
 public interface ArticleService {
     public boolean addarticle(Article article);

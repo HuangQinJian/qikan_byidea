@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.hqj.service;
 
 import com.hqj.model.Article;
