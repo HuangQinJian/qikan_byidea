@@ -19,6 +19,7 @@ import java.util.Date;
 public class ArticleExpertCheck extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("utf-8");
+        request.setCharacterEncoding("utf-8");
         int articleid = Integer.parseInt(request.getParameter("articleid"));
         String expert = request.getParameter("expert");
         String experttime = request.getParameter("expert_time");

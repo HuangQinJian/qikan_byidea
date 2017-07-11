@@ -98,13 +98,13 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public boolean editorarticle(int id, String editorname, String editordetail, java.util.Date editortime) {
         // TODO Auto-generated method stub
-        String sql = "update article_detail set editorname=?,editordetail=?,editortime=?  where articleid=?";
+        String sql = "INSERT INTO article_detail(articleid,editorname,editordetail,editortime) VALUES (?,?,?,?) ";
         try {
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, editorname);
-            pstmt.setString(2, editordetail);
-            pstmt.setDate(3, new java.sql.Date(editortime.getTime()));
-            pstmt.setInt(4, id);
+            pstmt.setInt(1, id);
+            pstmt.setString(2, editorname);
+            pstmt.setString(3, editordetail);
+            pstmt.setDate(4, new java.sql.Date(editortime.getTime()));
             if (pstmt.executeUpdate() == 1) {
                 logger.info("编辑者更新时的sql语句是" + sql);
                 // System.out.println("更新时的sql语句是" + sql);
@@ -126,13 +126,13 @@ public class ArticleServiceImpl implements ArticleService {
      */
     @Override
     public boolean expertarticle(int id, String expertname, String expertidea, java.util.Date experttime) {
-        String sql = "update article_idea set expertname=?,expertidea=?,experttime=?  where articleid=?";
+        String sql = "INSERT INTO article_idea (articleid,expertname,expertidea,experttime) VALUES (?,?,?,?)";
         try {
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, expertname);
-            pstmt.setString(2, expertidea);
-            pstmt.setDate(3, new java.sql.Date(experttime.getTime()));
-            pstmt.setInt(4, id);
+            pstmt.setInt(1, id);
+            pstmt.setString(2, expertname);
+            pstmt.setString(3, expertidea);
+            pstmt.setDate(4, new java.sql.Date(experttime.getTime()));
             if (pstmt.executeUpdate() == 1) {
                 logger.info("专家更新时的sql语句是" + sql);
                 // System.out.println("更新时的sql语句是" + sql);

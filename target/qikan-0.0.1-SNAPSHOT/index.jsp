@@ -20,7 +20,7 @@
     <meta name="keywords" content=""
     />
     <meta name="application-name" content="sprFlat admin template"/>
-    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="css/article_list.css" rel="stylesheet" type="text/css"/>
     <!-- Import google fonts - Heading first/ text second -->
     <link rel='stylesheet' type='text/css'
           href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Droid+Sans:400,700'/>

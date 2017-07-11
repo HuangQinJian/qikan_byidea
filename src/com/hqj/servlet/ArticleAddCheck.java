@@ -44,7 +44,7 @@ public class ArticleAddCheck extends HttpServlet {
                           HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
         response.setCharacterEncoding("utf-8");
-        //request.setCharacterEncoding("utf-8");
+        request.setCharacterEncoding("utf-8");
         String title = request.getParameter("title");
         String publish_time = request.getParameter("publish_time");
         String author = request.getParameter("author");

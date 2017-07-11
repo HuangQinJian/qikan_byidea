@@ -3528,3 +3528,7 @@ pre {
 .sidebar-inner{
   padding-top: 10px;
 }
+.activeType{
+  color:#003366;
+  font-weight:bold; 
+}

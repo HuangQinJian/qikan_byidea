@@ -1,0 +1,16 @@
+#return_home {
+    margin-left: 935px;
+    margin-top: 5px;
+    height: 38px;
+    background-color: #6bda92;
+}
+
+#return_home a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#return_home a:hover {
+    color: red;
+}
