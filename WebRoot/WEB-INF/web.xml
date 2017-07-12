@@ -65,6 +65,14 @@
         <servlet-name>GetIdByArticleTitle</servlet-name>
         <servlet-class>com.hqj.servlet.GetIdByArticleTitle</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ShowNotEditor</servlet-name>
+        <servlet-class>com.hqj.servlet.ShowNotEditor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowNotExpert</servlet-name>
+        <servlet-class>com.hqj.servlet.ShowNotExpert</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthorLoginCheck</servlet-name>
         <url-pattern>/ueditor/authorjsp/AuthorLoginCheck</url-pattern>
@@ -88,14 +96,6 @@
     <servlet-mapping>
         <servlet-name>ShowAllArticle</servlet-name>
         <url-pattern>/ShowAllArticle</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ShowAllArticle</servlet-name>
-        <url-pattern>/editorjsp/ShowAllArticle</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ShowAllArticle</servlet-name>
-        <url-pattern>/expertorjsp/ShowAllArticle</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SearchArticleById</servlet-name>
@@ -132,6 +132,14 @@
     <servlet-mapping>
         <servlet-name>GetIdByArticleTitle</servlet-name>
         <url-pattern>/GetIdByArticleTitle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowNotEditor</servlet-name>
+        <url-pattern>/editorjsp/ShowNotEditor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowNotExpert</servlet-name>
+        <url-pattern>/expertorjsp/ShowNotExpert</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

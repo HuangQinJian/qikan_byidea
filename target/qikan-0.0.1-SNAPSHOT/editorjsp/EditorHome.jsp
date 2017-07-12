@@ -89,7 +89,7 @@
             <!-- Start .page-header -->
             <div class="col-lg-12 heading">
                 <h1 class="page-header"><i class="im-table2"></i> 文章列表
-                    <button class="btn btn-primary" id="btn">显示所有已提交文章题目</button>
+                    <button class="btn btn-primary" id="btn">显示所有未编辑文章题目</button>
                 </h1>
             </div>
             <div class="col-lg-4">
@@ -195,13 +195,13 @@
         //alert("hello");
         $.ajax({
             type: "post",
-            url: "ShowAllArticle",
+            url: "ShowNotEditor",
             dataType: "json",
             data: {},
             success: function (data) {
                 console.log(data);
                 var result = {
-                    tit: '文章列表',
+                    tit: '未编辑文章列表',
                     list: data
                 };
                 var html = template('test', result);

@@ -201,13 +201,13 @@
         //alert("hello");
         $.ajax({
             type: "post",
-            url: "ShowAllArticle",
+            url: "ShowNotExpert",
             dataType: "json",
             data: {},
             success: function (data) {
                 console.log(data);
                 var result = {
-                    tit: '文章列表',
+                    tit: '未评审文章列表',
                     list: data
                 };
                 var html = template('test', result);

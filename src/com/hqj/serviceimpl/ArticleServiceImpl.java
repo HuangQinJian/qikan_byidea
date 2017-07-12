@@ -272,4 +272,58 @@ public class ArticleServiceImpl implements ArticleService {
         }
         return 0;
     }
+
+    /*
+    展示所有未被编辑过的页面
+     */
+    @Override
+    public ArrayList<Article> NotEditor() {
+        String sql = "select * from article where id not in (select articleid from article_detail) ";
+        ResultSet rSet = DB.getResultSet(st, sql);
+        ArrayList<Article> arrayList = new ArrayList<Article>();
+        try {
+            while (rSet.next()) {
+                Article article = new Article();
+                Author autor = new Author();
+                autor.setAutoname(rSet.getString(2));
+                article.setId(rSet.getInt(1));
+                article.setAutor(autor);
+                article.setTitle(rSet.getString(3));
+                article.setPublishdate(rSet.getDate(4));
+                article.setContent(rSet.getString(5));
+                arrayList.add(article);
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return arrayList;
+    }
+
+    /*
+    展示所有专家未评审过的页面
+     */
+    @Override
+    public ArrayList<Article> NotExpert() {
+        String sql = "select * from article where id not in (select articleid from article_idea) ";
+        ResultSet rSet = DB.getResultSet(st, sql);
+        ArrayList<Article> arrayList = new ArrayList<Article>();
+        try {
+            while (rSet.next()) {
+                Article article = new Article();
+                Author autor = new Author();
+                autor.setAutoname(rSet.getString(2));
+                article.setId(rSet.getInt(1));
+                article.setAutor(autor);
+                article.setTitle(rSet.getString(3));
+                article.setPublishdate(rSet.getDate(4));
+                article.setContent(rSet.getString(5));
+                arrayList.add(article);
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return arrayList;
+    }
 }

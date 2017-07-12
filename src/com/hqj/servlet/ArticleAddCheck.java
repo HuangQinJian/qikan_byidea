@@ -48,8 +48,13 @@ public class ArticleAddCheck extends HttpServlet {
         String title = request.getParameter("title");
         String publish_time = request.getParameter("publish_time");
         String author = request.getParameter("author");
-        String content = request.getParameter("article_content").trim();
+        String content = request.getParameter("article_content");
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        if (content == null) {
+            response.sendRedirect("/qikan/errorpage/ArticleAddError.jsp");
+            return;
+        } else
+            content = content.trim();
         Article article = new Article();
         Author authors = new Author();
         authors.setAutoname(author);

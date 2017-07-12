@@ -73,4 +73,15 @@ public class testArticle {
         System.out.print(new ArticleServiceImpl().getidByArticleTitle("我爱你"));
         System.out.print(new ArticleServiceImpl().getidByArticleTitle("我爱她"));
     }
+
+    @Test
+    public void NotEditor() {
+        System.out.print(new ArticleServiceImpl().getInstance().NotEditor());
+    }
+
+    @Test
+    public void NotExpert() {
+        System.out.print(new ArticleServiceImpl().getInstance().NotExpert());
+    }
+
 }

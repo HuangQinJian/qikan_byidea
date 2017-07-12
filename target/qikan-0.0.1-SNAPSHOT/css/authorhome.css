@@ -1,13 +1,27 @@
 @CHARSET "UTF-8";
 
 #title {
-	padding-top: 40px;
+    padding-top: 20px;
+}
+
+#publish_time {
+    margin-top: 5px;
 }
 
 #detail {
-	
+    margin-top: 20px;
 }
 
 #editor {
-	width: 80%;
+    width: 80%;
+}
+
+#submit {
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 980px;
+}
+
+#btn {
+    padding: 6px 20px;
 }

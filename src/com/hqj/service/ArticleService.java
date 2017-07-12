@@ -25,4 +25,8 @@ public interface ArticleService {
     public Article SearchArticleById(int id);
 
     public int getidByArticleTitle(String title);
+
+    public ArrayList<Article> NotEditor();
+
+    public ArrayList<Article> NotExpert();
 }

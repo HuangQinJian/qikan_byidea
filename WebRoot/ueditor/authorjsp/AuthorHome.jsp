@@ -38,6 +38,7 @@
     <!-- Icons -->
     <link href="../../assets/css/icons.css" rel="stylesheet"/>
     <link href="../../css/return_home.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/authorhome.css" rel="stylesheet" type="text/css"/>
     <!-- jQueryUI -->
     <link href="../../assets/css/sprflat-theme/jquery.ui.all.css" rel="stylesheet"/>
     <!-- Bootstrap stylesheets (included template modifications) -->
@@ -120,13 +121,10 @@
                             </div>
                             <div id="detail">
                                 <div id="author">
-                                    文章作者：
-                                    <p><%=(String) session.getAttribute("name")%>
-                                    </p>
+                                    文章作者：<%=(String) session.getAttribute("name")%>
                                 </div>
                                 <div id="publish_time">
-                                    <p><%=sdf.format(d)%>
-                                    </p>
+                                    发布时间：<%=sdf.format(d)%>
                                 </div>
                             </div>
                             <script id="container" name="article_content" type="text/plain">

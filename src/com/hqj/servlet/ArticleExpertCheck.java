@@ -25,6 +25,11 @@ public class ArticleExpertCheck extends HttpServlet {
         String experttime = request.getParameter("expert_time");
         String expertidea = request.getParameter("expertidea");
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        if (expertidea == null) {
+            response.sendRedirect("/qikan/errorpage/ArticleExpertError.jsp");
+            return;
+        } else
+            expertidea = expertidea.trim();
         try {
             Date date = dateFormat.parse(experttime);
             if (new ExpertServiceImpl().updatearticle(articleid, expert, expertidea, date)) {
