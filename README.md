@@ -63,3 +63,26 @@ result是后台获取的json数据
  var html = template('test', result);
  document.getElementById('article_list').innerHTML = html;
 ```
+
+#### 3、在项目中，数据库连接出现了如下问题：
+
+```java
+No operations allowed after statement closed.
+```
+原因是：有程序试图在已关闭的数据库连接上继续执行操作。
+
+还有其他可能导致这个错误的原因包括：
+
+1、你这里和数据库的连接Connection是一个Static的，程序共享这一个Connection。所以第一次对数据库操作没问题，当把Connection关闭后，第二次还想操作数据库时Connection肯定不存在了。
+
+2、MySQL在5以后针对超长时间DB连接做了一个处理，那就是如果一个DB连接在无任何操作情况下过了8个小时后，mysql会自动把这个连接关闭。所以使用连接池的时候虽然连接对象还在但是链接数据库的时候会一直报这个异常。
+
+解决办法：在Mysql命令行中，
+```java
+show global variables;
+```
+In MYSQL, I reset that value to 172800 seconds(48 hrs as per my requirement) using
+
+```java
+set global wait_timeout=172800;
+```

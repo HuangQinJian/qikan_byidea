@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9890b4be-064a-4f9a-ac78-e55448fb8a90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/model/DB.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/model/DB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/AuthorServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/AuthorServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/EditorServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/EditorServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ExpertServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ExpertServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/test/testDB.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/test/testDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/model/DB.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/model/DB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/AuthorServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/AuthorServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/EditorServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/EditorServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ExpertServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ExpertServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testDB.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/model/DB.java" afterPath="$PROJECT_DIR$/src/com/hqj/model/DB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/test/testDB.java" afterPath="$PROJECT_DIR$/src/com/hqj/test/testDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -103,7 +85,6 @@
         <option value="$PROJECT_DIR$/WebRoot/css/article_list.css" />
         <option value="$PROJECT_DIR$/WebRoot/css/return_home.css" />
         <option value="$PROJECT_DIR$/src/com/hqj/servlet/ArticleEditCheck.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/hqj/service/ArticleService.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/test/testArticle.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/servlet/ShowNotEditor.java" />
@@ -125,6 +106,7 @@
         <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -927,7 +909,7 @@
       <workItem from="1499783361123" duration="960000" />
       <workItem from="1499820644117" duration="5664000" />
       <workItem from="1499836034975" duration="807000" />
-      <workItem from="1499907200914" duration="7388000" />
+      <workItem from="1499907200914" duration="7905000" />
     </task>
     <servers />
   </component>
@@ -964,7 +946,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85410000" />
+    <option name="totallyTimeSpent" value="85927000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -999,7 +981,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45081967" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45081967" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1860817" sideWeight="0.46212122" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18078668" sideWeight="0.5378788" order="2" side_tool="true" content_ui="tabs" />
@@ -1160,16 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="22" column="63" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1600">
-            <caret line="64" column="3" lean-forward="true" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1380,7 +1352,7 @@
         <state relative-caret-position="175">
           <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1391,17 +1363,6 @@
           <caret line="111" column="50" lean-forward="true" selection-start-line="111" selection-start-column="50" selection-end-line="111" selection-end-column="50" />
           <folding>
             <marker date="1499916596280" expanded="true" signature="2202:2247" ph="insert into editor... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
-          <folding>
-            <marker date="1499916596358" expanded="true" signature="1144:1189" ph="insert into author... " />
-            <marker date="1499916596358" expanded="true" signature="2096:2127" ph="delete from " />
           </folding>
         </state>
       </provider>
@@ -1417,6 +1378,28 @@
             <marker date="1499916460539" expanded="true" signature="3317:3406" ph="INSERT INTO article_detail... " />
             <marker date="1499916460539" expanded="true" signature="4334:4420" ph="INSERT INTO article_idea... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+          <folding>
+            <marker date="1499916596358" expanded="true" signature="1144:1189" ph="insert into author... " />
+            <marker date="1499916596358" expanded="true" signature="2096:2127" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="430">
+            <caret line="83" column="82" lean-forward="false" selection-start-line="83" selection-start-column="82" selection-end-line="83" selection-end-column="82" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
