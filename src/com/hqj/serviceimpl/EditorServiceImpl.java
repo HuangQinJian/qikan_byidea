@@ -110,29 +110,24 @@ public class EditorServiceImpl implements EditorService {
         logger.info("编辑者查询时的sql语句是" + sql);
         //System.out.println("查询时的sql语句是" + sql);
         ResultSet rSet = db.getResultSet(st, sql);
-        int index = 0;
+        // int index = 0;
         try {
             while (rSet.next()) {
                 if (rSet.getString(2).equals(name)
                         && rSet.getString(3).equals(password)) {
                     logger.info("编辑者登录成功！");
                     //System.out.println("登录成功");
-                    index = 1;
-                    break;
+                    return true;
                 } else {
                     logger.info("编辑者登录失败！");
                     logger.error("您输入的用户名或者密码不正确，请重新输入!");
                     //System.out.println("您输入的用户名或者密码不正确，请重新输入!");
-                    index = 0;
+                    // index = 0;
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        if (index == 1) {
-            return true;
-        } else {
-            return false;
-        }
+        return false;
     }
 }
