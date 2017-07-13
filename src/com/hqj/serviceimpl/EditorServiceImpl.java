@@ -1,22 +1,19 @@
 package com.hqj.serviceimpl;
 
 import com.hqj.model.Article;
-import com.hqj.model.DB;
 import com.hqj.model.Editor;
 import com.hqj.service.EditorService;
-import com.mysql.jdbc.Connection;
+import com.hqj.utils.C3p0Utils;
+import com.hqj.utils.DBhelper;
 import org.apache.log4j.Logger;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 
 public class EditorServiceImpl implements EditorService {
     private static EditorServiceImpl eImpl = null;
     private Logger logger = Logger.getLogger(this.getClass().getName());
-    DB db = new DB();
+    DBhelper dBhelper = new DBhelper();
 
     public static EditorServiceImpl getInstance() {
         if (eImpl == null) {
@@ -27,8 +24,8 @@ public class EditorServiceImpl implements EditorService {
         return eImpl;
     }
 
-    Connection conn = db.getConn();
-    Statement st = db.getStatement(conn);
+    Connection conn = C3p0Utils.getConnection();
+    Statement st = dBhelper.getStatement(conn);
     private PreparedStatement pstmt = null;
 
     /*
@@ -109,7 +106,7 @@ public class EditorServiceImpl implements EditorService {
         String sql = "select * from editor";
         logger.info("编辑者查询时的sql语句是" + sql);
         //System.out.println("查询时的sql语句是" + sql);
-        ResultSet rSet = db.getResultSet(st, sql);
+        ResultSet rSet = dBhelper.getResultSet(st, sql);
         // int index = 0;
         try {
             while (rSet.next()) {

@@ -2,21 +2,18 @@ package com.hqj.serviceimpl;
 
 import com.hqj.model.Article;
 import com.hqj.model.Author;
-import com.hqj.model.DB;
 import com.hqj.service.ArticleService;
-import com.mysql.jdbc.Connection;
+import com.hqj.utils.C3p0Utils;
+import com.hqj.utils.DBhelper;
 import org.apache.log4j.Logger;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class ArticleServiceImpl implements ArticleService {
     private static ArticleServiceImpl aImpl = null;
     private Logger logger = Logger.getLogger(this.getClass().getName());
-    DB db = new DB();
+    DBhelper dBhelper = new DBhelper();
 
     public static ArticleServiceImpl getInstance() {
         if (aImpl == null) {
@@ -27,8 +24,8 @@ public class ArticleServiceImpl implements ArticleService {
         return aImpl;
     }
 
-    Connection conn = db.getConn();
-    Statement st = db.getStatement(conn);
+    Connection conn = C3p0Utils.getConnection();
+    Statement st = dBhelper.getStatement(conn);
     private PreparedStatement pstmt = null;
 
     /*
@@ -170,7 +167,7 @@ public class ArticleServiceImpl implements ArticleService {
     public ArrayList<Article> display() {
         // TODO Auto-generated method stub
         String sql = "select * from article";
-        ResultSet rSet = db.getResultSet(st, sql);
+        ResultSet rSet = dBhelper.getResultSet(st, sql);
         ArrayList<Article> arrayList = new ArrayList<Article>();
         try {
             while (rSet.next()) {
@@ -206,7 +203,7 @@ public class ArticleServiceImpl implements ArticleService {
         // TODO Auto-generated method stub
         String sql = "select * from article where author=" + "'" + authorName
                 + "'";
-        ResultSet rSet = db.getResultSet(st, sql);
+        ResultSet rSet = dBhelper.getResultSet(st, sql);
         ArrayList<Article> arrayList = new ArrayList<Article>();
         try {
             while (rSet.next()) {
@@ -235,7 +232,7 @@ public class ArticleServiceImpl implements ArticleService {
     public Article SearchArticleById(int id) {
         // TODO Auto-generated method stub
         String sql = "select * from article where id=" + id;
-        ResultSet rSet = db.getResultSet(st, sql);
+        ResultSet rSet = dBhelper.getResultSet(st, sql);
         Article article = new Article();
         try {
             while (rSet.next()) {
@@ -262,7 +259,7 @@ public class ArticleServiceImpl implements ArticleService {
     public int getidByArticleTitle(String title) {
         String sql = "select * from article where title=" + "'" + title
                 + "'";
-        ResultSet rSet = db.getResultSet(st, sql);
+        ResultSet rSet = dBhelper.getResultSet(st, sql);
         try {
             while (rSet.next()) {
                 return rSet.getInt("id");
@@ -280,7 +277,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public ArrayList<Article> NotEditor() {
         String sql = "select * from article where id not in (select articleid from article_detail) ";
-        ResultSet rSet = db.getResultSet(st, sql);
+        ResultSet rSet = dBhelper.getResultSet(st, sql);
         ArrayList<Article> arrayList = new ArrayList<Article>();
         try {
             while (rSet.next()) {
@@ -307,7 +304,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public ArrayList<Article> NotExpert() {
         String sql = "select * from article where id not in (select articleid from article_idea) ";
-        ResultSet rSet = db.getResultSet(st, sql);
+        ResultSet rSet = dBhelper.getResultSet(st, sql);
         ArrayList<Article> arrayList = new ArrayList<Article>();
         try {
             while (rSet.next()) {

@@ -11,6 +11,8 @@
 
 ### 3、使用了log4j进行日志记录
 
+### 4、使用了C3P0数据库连接池
+
 使用步骤：
 
 ![](http://op3sagu96.bkt.clouddn.com/123.PNG)
@@ -64,7 +66,63 @@ result是后台获取的json数据
  document.getElementById('article_list').innerHTML = html;
 ```
 
-#### 3、在项目中，数据库连接出现了如下问题：
+#### 3、C3P0的配置
+
+1、在resource文件夹中添加c3p0-config.xml文件，名字一定要为c3p0-config.xml，不能改变！
+
+注意：一定要把resource文件夹标记为资源文件夹！
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!--默认配置-->
+    <default-config>
+        <property name="initialPoolSize">10</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">10</property>
+        <property name="maxStatements">200</property>
+    </default-config>
+
+    <!--配置连接池mysql-->
+    <named-config name="mysql">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost/qikan</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        <property name="initialPoolSize">10</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">10</property>
+        <property name="maxStatements">200</property>
+    </named-config>
+</c3p0-config>
+```
+
+2、在utils中编写C3p0Utils，获取连接池：
+
+```java
+public class C3p0Utils {
+    private static Logger logger = Logger.getLogger(C3p0Utils.class.getName());
+    //通过标识名来创建相应连接池
+    static ComboPooledDataSource dataSource = new ComboPooledDataSource("mysql");
+
+    //从连接池中取用一个连接
+    public static Connection getConnection() {
+        try {
+            logger.info("连接成功！");
+            return dataSource.getConnection();
+        } catch (Exception e) {
+            logger.error("Exception in C3p0Utils!", e);
+        }
+        return null;
+    }
+ }
+
+```
+
+
+#### 4、在项目中，数据库连接出现了如下问题：
 
 ```java
 No operations allowed after statement closed.

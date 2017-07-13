@@ -22,7 +22,6 @@ public class C3p0Utils {
         try {
             logger.info("连接成功！");
             return dataSource.getConnection();
-
         } catch (Exception e) {
             logger.error("Exception in C3p0Utils!", e);
         }
