@@ -16,6 +16,7 @@ import java.util.ArrayList;
 public class ArticleServiceImpl implements ArticleService {
     private static ArticleServiceImpl aImpl = null;
     private Logger logger = Logger.getLogger(this.getClass().getName());
+    DB db = new DB();
 
     public static ArticleServiceImpl getInstance() {
         if (aImpl == null) {
@@ -26,8 +27,8 @@ public class ArticleServiceImpl implements ArticleService {
         return aImpl;
     }
 
-    Connection conn = DB.getConn();
-    Statement st = DB.getStatement(conn);
+    Connection conn = db.getConn();
+    Statement st = db.getStatement(conn);
     private PreparedStatement pstmt = null;
 
     /*
@@ -169,7 +170,7 @@ public class ArticleServiceImpl implements ArticleService {
     public ArrayList<Article> display() {
         // TODO Auto-generated method stub
         String sql = "select * from article";
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         ArrayList<Article> arrayList = new ArrayList<Article>();
         try {
             while (rSet.next()) {
@@ -205,7 +206,7 @@ public class ArticleServiceImpl implements ArticleService {
         // TODO Auto-generated method stub
         String sql = "select * from article where author=" + "'" + authorName
                 + "'";
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         ArrayList<Article> arrayList = new ArrayList<Article>();
         try {
             while (rSet.next()) {
@@ -234,7 +235,7 @@ public class ArticleServiceImpl implements ArticleService {
     public Article SearchArticleById(int id) {
         // TODO Auto-generated method stub
         String sql = "select * from article where id=" + id;
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         Article article = new Article();
         try {
             while (rSet.next()) {
@@ -261,7 +262,7 @@ public class ArticleServiceImpl implements ArticleService {
     public int getidByArticleTitle(String title) {
         String sql = "select * from article where title=" + "'" + title
                 + "'";
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         try {
             while (rSet.next()) {
                 return rSet.getInt("id");
@@ -279,7 +280,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public ArrayList<Article> NotEditor() {
         String sql = "select * from article where id not in (select articleid from article_detail) ";
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         ArrayList<Article> arrayList = new ArrayList<Article>();
         try {
             while (rSet.next()) {
@@ -306,7 +307,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public ArrayList<Article> NotExpert() {
         String sql = "select * from article where id not in (select articleid from article_idea) ";
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         ArrayList<Article> arrayList = new ArrayList<Article>();
         try {
             while (rSet.next()) {

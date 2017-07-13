@@ -2,47 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9890b4be-064a-4f9a-ac78-e55448fb8a90" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/model/DB.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/model/DB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/AuthorServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/AuthorServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/EditorServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/EditorServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ExpertServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/serviceimpl/ExpertServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ArticleAddCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ArticleAddCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/AuthorLoginCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/AuthorLoginCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/AuthorRegiest.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/AuthorRegiest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/EditorLoginCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/EditorLoginCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/EditorRegiest.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/EditorRegiest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ExpertorLoginCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ExpertorLoginCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ExpertorRegiest.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/ExpertorRegiest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/servlet/GetIdByArticleTitle.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/servlet/GetIdByArticleTitle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/test/testArticle.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/test/testArticle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/test/testAuthor.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/test/testAuthor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/test/testEditor.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/test/testEditor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/test/testExpertor.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/test/testExpertor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hqj/test/testDB.class" afterPath="$PROJECT_DIR$/target/classes/com/hqj/test/testDB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/model/DB.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/model/DB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ArticleServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/AuthorServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/AuthorServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/EditorServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/EditorServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ExpertServiceImpl.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/serviceimpl/ExpertServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ArticleAddCheck.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ArticleAddCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/AuthorLoginCheck.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/AuthorLoginCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/AuthorRegiest.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/AuthorRegiest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/EditorLoginCheck.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/EditorLoginCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/EditorRegiest.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/EditorRegiest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ExpertorLoginCheck.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ExpertorLoginCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ExpertorRegiest.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/ExpertorRegiest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/GetIdByArticleTitle.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/servlet/GetIdByArticleTitle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testArticle.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testArticle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testAuthor.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testAuthor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testEditor.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testEditor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testExpertor.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testExpertor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testDB.class" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/WEB-INF/classes/com/hqj/test/testDB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/editorjsp/ShowEveryArticle.jsp" afterPath="$PROJECT_DIR$/WebRoot/editorjsp/ShowEveryArticle.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/expertorjsp/ShowEveryArticle.jsp" afterPath="$PROJECT_DIR$/WebRoot/expertorjsp/ShowEveryArticle.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/model/DB.java" afterPath="$PROJECT_DIR$/src/com/hqj/model/DB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/editorjsp/ShowEveryArticle.jsp" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/editorjsp/ShowEveryArticle.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/expertorjsp/ShowEveryArticle.jsp" afterPath="$PROJECT_DIR$/target/qikan-0.0.1-SNAPSHOT/expertorjsp/ShowEveryArticle.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/test/testDB.java" afterPath="$PROJECT_DIR$/src/com/hqj/test/testDB.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -96,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebRoot/errorpage/ExpertorLoginErr.jsp" />
         <option value="$PROJECT_DIR$/src/com/hqj/model/Article.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/model/Author.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/model/Editor.java" />
@@ -138,15 +115,16 @@
         <option value="$PROJECT_DIR$/WebRoot/css/authorhome.css" />
         <option value="$PROJECT_DIR$/src/com/hqj/servlet/ArticleAddCheck.java" />
         <option value="$PROJECT_DIR$/src/com/hqj/servlet/ArticleExpertCheck.java" />
-        <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" />
         <option value="$PROJECT_DIR$/WebRoot/expertorjsp/ShowEveryArticle.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/css/expertdetail.css" />
         <option value="$PROJECT_DIR$/WebRoot/editorjsp/ShowEveryArticle.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/css/editordetail.css" />
         <option value="$PROJECT_DIR$/src/com/hqj/model/DB.java" />
+        <option value="$PROJECT_DIR$/src/com/hqj/test/testDB.java" />
+        <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -949,7 +927,7 @@
       <workItem from="1499783361123" duration="960000" />
       <workItem from="1499820644117" duration="5664000" />
       <workItem from="1499836034975" duration="807000" />
-      <workItem from="1499907200914" duration="5623000" />
+      <workItem from="1499907200914" duration="7388000" />
     </task>
     <servers />
   </component>
@@ -986,7 +964,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83645000" />
+    <option name="totallyTimeSpent" value="85410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -998,7 +976,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1021,9 +999,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45081967" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45081967" sideWeight="0.49706313" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1860817" sideWeight="0.46212122" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1860817" sideWeight="0.46212122" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18078668" sideWeight="0.5378788" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1052,7 +1030,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRoot/2.jsp" />
     <entry file="file://$PROJECT_DIR$/WebRoot/ShowHomeArticle.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1575">
@@ -1324,37 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <marker date="1499836437493" expanded="true" signature="1035:1080" ph="insert into expert... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <marker date="1499836437540" expanded="true" signature="2180:2225" ph="insert into editor... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <marker date="1499836437399" expanded="true" signature="1122:1167" ph="insert into author... " />
-            <marker date="1499836437399" expanded="true" signature="2074:2105" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hqj/servlet/ArticleAddCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-200">
@@ -1411,24 +1357,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/test/testDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="125">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
           <folding>
-            <marker date="1499836313536" expanded="true" signature="1229:1291" ph="insert into article... " />
-            <marker date="1499836313536" expanded="true" signature="2299:2339" ph="update artic... " />
-            <marker date="1499836313536" expanded="true" signature="3295:3384" ph="INSERT INTO article_detail... " />
-            <marker date="1499836313536" expanded="true" signature="4312:4398" ph="INSERT INTO article_idea... " />
+            <marker date="1499916596327" expanded="true" signature="1057:1102" ph="insert into expert... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hqj/model/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2142">
-          <caret line="11" column="115" lean-forward="false" selection-start-line="11" selection-start-column="115" selection-end-line="11" selection-end-column="115" />
-          <folding />
+        <state relative-caret-position="175">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="111" column="50" lean-forward="true" selection-start-line="111" selection-start-column="50" selection-end-line="111" selection-end-column="50" />
+          <folding>
+            <marker date="1499916596280" expanded="true" signature="2202:2247" ph="insert into editor... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="114" column="13" lean-forward="false" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+          <folding>
+            <marker date="1499916596358" expanded="true" signature="1144:1189" ph="insert into author... " />
+            <marker date="1499916596358" expanded="true" signature="2096:2127" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1499916460539" expanded="true" signature="1251:1313" ph="insert into article... " />
+            <marker date="1499916460539" expanded="true" signature="2321:2361" ph="update artic... " />
+            <marker date="1499916460539" expanded="true" signature="3317:3406" ph="INSERT INTO article_detail... " />
+            <marker date="1499916460539" expanded="true" signature="4334:4420" ph="INSERT INTO article_idea... " />
+          </folding>
         </state>
       </provider>
     </entry>

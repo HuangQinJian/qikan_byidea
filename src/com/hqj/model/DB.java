@@ -5,7 +5,7 @@ import com.mysql.jdbc.Connection;
 import java.sql.*;
 
 public class DB {
-    public static Connection getConn() {
+    public Connection getConn() {
         Connection conn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -18,7 +18,7 @@ public class DB {
         return conn;
     }
 
-    public static PreparedStatement prepare(Connection conn, String sql) {
+    public PreparedStatement prepare(Connection conn, String sql) {
         PreparedStatement pstmt = null;
         try {
             if (conn != null) {
@@ -30,8 +30,8 @@ public class DB {
         return pstmt;
     }
 
-    public static PreparedStatement prepare(Connection conn, String sql,
-                                            int autoGenereatedKeys) {
+    public PreparedStatement prepare(Connection conn, String sql,
+                                     int autoGenereatedKeys) {
         PreparedStatement pstmt = null;
         try {
             if (conn != null) {
@@ -43,7 +43,7 @@ public class DB {
         return pstmt;
     }
 
-    public static Statement getStatement(Connection conn) {
+    public Statement getStatement(Connection conn) {
         Statement stmt = null;
         try {
             if (conn != null) {
@@ -55,7 +55,7 @@ public class DB {
         return stmt;
     }
 
-    public static ResultSet getResultSet(Statement stmt, String sql) {
+    public ResultSet getResultSet(Statement stmt, String sql) {
         ResultSet rs = null;
         try {
             if (stmt != null) {
@@ -67,7 +67,7 @@ public class DB {
         return rs;
     }
 
-    public static void executeUpdate(Statement stmt, String sql) {
+    public void executeUpdate(Statement stmt, String sql) {
         try {
             if (stmt != null) {
                 stmt.executeUpdate(sql);
@@ -77,7 +77,7 @@ public class DB {
         }
     }
 
-    public static void close(Connection conn) {
+    public void close(Connection conn) {
         try {
             if (conn != null) {
                 conn.close();
@@ -88,7 +88,7 @@ public class DB {
         }
     }
 
-    public static void close(Statement stmt) {
+    public void close(Statement stmt) {
         try {
             if (stmt != null) {
                 stmt.close();
@@ -99,7 +99,7 @@ public class DB {
         }
     }
 
-    public static void close(ResultSet rs) {
+    public void close(ResultSet rs) {
         try {
             if (rs != null) {
                 rs.close();

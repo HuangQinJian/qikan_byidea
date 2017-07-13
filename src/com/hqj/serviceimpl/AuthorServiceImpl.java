@@ -16,6 +16,7 @@ import java.sql.Statement;
 public class AuthorServiceImpl implements AuthorService {
     private static AuthorServiceImpl aImpl = null;
     Logger logger = Logger.getLogger(this.getClass().getName());
+    DB db = new DB();
 
     public static AuthorServiceImpl getInstance() {
         if (aImpl == null) {
@@ -26,8 +27,8 @@ public class AuthorServiceImpl implements AuthorService {
         return aImpl;
     }
 
-    Connection conn = DB.getConn();
-    Statement st = DB.getStatement(conn);
+    Connection conn = db.getConn();
+    Statement st = db.getStatement(conn);
     private PreparedStatement pstmt = null;
 
     /*
@@ -109,7 +110,7 @@ public class AuthorServiceImpl implements AuthorService {
         String sql = "select * from author";
         logger.info("查询作者时的sql语句是" + sql);
         // System.out.println("查询时的sql语句是" + sql);
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         int index = 0;
         try {
             while (rSet.next()) {
@@ -125,11 +126,6 @@ public class AuthorServiceImpl implements AuthorService {
                     index = 0;
                 }
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        try {
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

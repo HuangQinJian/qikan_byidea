@@ -16,6 +16,7 @@ import java.sql.Statement;
 public class EditorServiceImpl implements EditorService {
     private static EditorServiceImpl eImpl = null;
     private Logger logger = Logger.getLogger(this.getClass().getName());
+    DB db = new DB();
 
     public static EditorServiceImpl getInstance() {
         if (eImpl == null) {
@@ -26,8 +27,8 @@ public class EditorServiceImpl implements EditorService {
         return eImpl;
     }
 
-    Connection conn = DB.getConn();
-    Statement st = DB.getStatement(conn);
+    Connection conn = db.getConn();
+    Statement st = db.getStatement(conn);
     private PreparedStatement pstmt = null;
 
     /*
@@ -108,7 +109,7 @@ public class EditorServiceImpl implements EditorService {
         String sql = "select * from editor";
         logger.info("编辑者查询时的sql语句是" + sql);
         //System.out.println("查询时的sql语句是" + sql);
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         int index = 0;
         try {
             while (rSet.next()) {
@@ -125,11 +126,6 @@ public class EditorServiceImpl implements EditorService {
                     index = 0;
                 }
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        try {
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

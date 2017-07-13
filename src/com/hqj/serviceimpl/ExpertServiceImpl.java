@@ -16,6 +16,7 @@ import java.sql.Statement;
 public class ExpertServiceImpl implements ExpertService {
     private static ExpertServiceImpl expertService = null;
     private Logger logger = Logger.getLogger(this.getClass().getName());
+    DB db = new DB();
 
     public static ExpertServiceImpl getInstance() {
         if (expertService == null) {
@@ -26,8 +27,8 @@ public class ExpertServiceImpl implements ExpertService {
         return expertService;
     }
 
-    Connection conn = DB.getConn();
-    Statement st = DB.getStatement(conn);
+    Connection conn = db.getConn();
+    Statement st = db.getStatement(conn);
     private PreparedStatement pstmt = null;
 
     @Override
@@ -59,7 +60,7 @@ public class ExpertServiceImpl implements ExpertService {
         String sql = "select * from expert";
         logger.info("查询时的sql语句是" + sql);
         //System.out.println("查询时的sql语句是" + sql);
-        ResultSet rSet = DB.getResultSet(st, sql);
+        ResultSet rSet = db.getResultSet(st, sql);
         int index = 0;
         try {
             while (rSet.next()) {
@@ -75,11 +76,6 @@ public class ExpertServiceImpl implements ExpertService {
                     index = 0;
                 }
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        try {
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
