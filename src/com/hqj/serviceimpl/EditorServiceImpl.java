@@ -14,12 +14,12 @@ import java.sql.Statement;
 
 
 public class EditorServiceImpl implements EditorService {
-    private EditorServiceImpl eImpl = null;
+    private static EditorServiceImpl eImpl = null;
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
-    public EditorServiceImpl getInstance() {
+    public static EditorServiceImpl getInstance() {
         if (eImpl == null) {
-            logger.info("第一次初始化EditorServiceImpl");
+            //logger.info("第一次初始化EditorServiceImpl");
             // System.out.println("第一次初始化EditorServiceImpl");
             eImpl = new EditorServiceImpl();
         }

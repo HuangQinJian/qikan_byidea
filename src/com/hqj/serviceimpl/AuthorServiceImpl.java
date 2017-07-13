@@ -14,12 +14,12 @@ import java.sql.Statement;
 
 
 public class AuthorServiceImpl implements AuthorService {
-    private AuthorServiceImpl aImpl = null;
+    private static AuthorServiceImpl aImpl = null;
     Logger logger = Logger.getLogger(this.getClass().getName());
 
-    public AuthorServiceImpl getInstance() {
+    public static AuthorServiceImpl getInstance() {
         if (aImpl == null) {
-            logger.info("第一次初始化AuthorServiceImpl");
+            // logger.info("第一次初始化AuthorServiceImpl");
             // System.out.println("第一次初始化AuthorServiceImpl");
             aImpl = new AuthorServiceImpl();
         }

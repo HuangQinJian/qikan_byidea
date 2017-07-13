@@ -14,12 +14,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ExpertServiceImpl implements ExpertService {
-    private ExpertServiceImpl expertService = null;
+    private static ExpertServiceImpl expertService = null;
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
-    public ExpertServiceImpl getInstance() {
+    public static ExpertServiceImpl getInstance() {
         if (expertService == null) {
-            logger.info("第一次初始化ExpertServiceImpl");
+            // logger.info("第一次初始化ExpertServiceImpl");
             //System.out.println("第一次初始化ExpertServiceImpl");
             expertService = new ExpertServiceImpl();
         }
@@ -40,11 +40,11 @@ public class ExpertServiceImpl implements ExpertService {
             if (pstmt.executeUpdate() == 1) {
                 logger.info("查询时的sql语句是" + sql);
                 //System.out.println("查询时的sql语句是" + sql);
-               // System.out.println("yes");
+                // System.out.println("yes");
                 return true;
             } else {
                 logger.error("专家信息添加失败!");
-               // System.out.println("no");
+                // System.out.println("no");
                 // return false;
             }
         } catch (SQLException e) {
@@ -66,12 +66,12 @@ public class ExpertServiceImpl implements ExpertService {
                 if (rSet.getString(2).equals(name)
                         && rSet.getString(3).equals(password)) {
                     logger.info("编辑者登录成功！");
-                   // System.out.println("登录成功");
+                    // System.out.println("登录成功");
                     index = 1;
                     break;
                 } else {
                     logger.error("您输入的用户名或者密码不正确，请重新输入!");
-                   // System.out.println("您输入的用户名或者密码不正确，请重新输入!");
+                    // System.out.println("您输入的用户名或者密码不正确，请重新输入!");
                     index = 0;
                 }
             }

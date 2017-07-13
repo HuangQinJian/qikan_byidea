@@ -14,12 +14,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 public class ArticleServiceImpl implements ArticleService {
-    private ArticleServiceImpl aImpl = null;
+    private static ArticleServiceImpl aImpl = null;
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
-    public ArticleServiceImpl getInstance() {
+    public static ArticleServiceImpl getInstance() {
         if (aImpl == null) {
-            logger.info("第一次初始化ArticleServiceImpl");
+            //logger.info("第一次初始化ArticleServiceImpl");
             //System.out.println("第一次初始化ArticleServiceImpl");
             aImpl = new ArticleServiceImpl();
         }

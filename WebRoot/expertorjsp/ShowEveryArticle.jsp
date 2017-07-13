@@ -37,6 +37,7 @@
     <!-- Icons -->
     <link href="../assets/css/icons.css" rel="stylesheet"/>
     <link href="../css/return_home.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/expertdetail.css" rel="stylesheet" type="text/css"/>
     <!-- jQueryUI -->
     <link href="../assets/css/sprflat-theme/jquery.ui.all.css" rel="stylesheet"/>
     <!-- Bootstrap stylesheets (included template modifications) -->
