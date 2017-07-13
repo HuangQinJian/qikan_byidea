@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9890b4be-064a-4f9a-ac78-e55448fb8a90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ArticleServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/AuthorServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/EditorServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hqj/serviceimpl/ExpertServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hqj/utils/C3p0Utils.java" afterPath="$PROJECT_DIR$/src/com/hqj/utils/C3p0Utils.java" />
-    </list>
+    <list default="true" id="9890b4be-064a-4f9a-ac78-e55448fb8a90" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -917,7 +910,7 @@
       <workItem from="1499836034975" duration="807000" />
       <workItem from="1499907200914" duration="8120000" />
       <workItem from="1499919870082" duration="554000" />
-      <workItem from="1499924147666" duration="4346000" />
+      <workItem from="1499924147666" duration="4386000" />
     </task>
     <servers />
   </component>
@@ -954,7 +947,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91042000" />
+    <option name="totallyTimeSpent" value="91082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -966,7 +959,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
