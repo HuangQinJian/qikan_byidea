@@ -1,17 +1,16 @@
 package com.hqj.servlet;
 
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import com.hqj.model.Article;
+import com.hqj.model.Author;
+import com.hqj.serviceimpl.AuthorServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.hqj.model.Article;
-import com.hqj.model.Author;
-import com.hqj.serviceimpl.AuthorServiceImpl;
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 /**
  * Servlet implementation class ArticleAddCheck
@@ -68,7 +67,9 @@ public class ArticleAddCheck extends HttpServlet {
         article.setAutor(authors);
         article.setContent(content);
         if (new AuthorServiceImpl().getInstance().addArticle(article)) {
+            //request.getSession().setAttribute("str", "true");
             response.sendRedirect("/qikan/ueditor/authorjsp/AuthorHome.jsp");
+            //request.getRequestDispatcher("/ueditor/authorjsp/AuthorHome.jsp").forward(request, response);
         } else {
             response.sendRedirect("/qikan/errorpage/ArticleAddError.jsp");
         }

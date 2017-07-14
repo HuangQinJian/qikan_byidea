@@ -62,6 +62,15 @@
     <meta name="msapplication-TileColor" content="#3399cc"/>
 </head>
 <body>
+<%--<%
+    if ((String) request.getAttribute("str") == "true") {
+%>
+<script>
+    alert("操作成功！");
+</script>
+<%
+    }
+%>--%>
 <!-- Start #header -->
 <div id="header">
     <a class="navbar-brand" href="#">
