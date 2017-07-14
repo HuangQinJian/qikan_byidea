@@ -144,3 +144,7 @@ In MYSQL, I reset that value to 172800 seconds(48 hrs as per my requirement) usi
 ```java
 set global wait_timeout=172800;
 ```
+
+## 项目演示：
+
+![项目演示](http://op3sagu96.bkt.clouddn.com/display.gif)
