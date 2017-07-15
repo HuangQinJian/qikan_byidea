@@ -13,7 +13,7 @@
 
 使用步骤：
 
-![](http://op3sagu96.bkt.clouddn.com/123.PNG)
+<center>![](http://op3sagu96.bkt.clouddn.com/123.PNG)
 
 首先在src目录下建立一个resource文件夹，然后添加log4j.properties文件，具体内容可参考代码！
 
